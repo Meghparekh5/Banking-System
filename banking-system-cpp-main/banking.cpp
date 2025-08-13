@@ -160,7 +160,6 @@ public:
         cout << "Enter Account Number: ";
         cin >> AccNo;
         
-
         cout << "Enter Account Holder Name (no spaces): ";
         cin >> name;
 
@@ -247,7 +246,7 @@ public:
         int AccNo;
         cout << "Enter Account Number: ";
         cin >> AccNo;
-
+                cout << "==============================" << endl;
         BankAcc* acc = findAccount(AccNo);
 
         if (acc) {
@@ -270,9 +269,10 @@ int main() {
         cout << "4. Check Balanceance" << endl;
         cout << "5. Display Account Info" << endl;
         cout << "6. Exit" << endl;
+        cout << "==============================" << endl;
         cout << "Enter choice: ";
         cin >> choice;
-        cout << "==============================" << endl;
+
 
         switch (choice) {
         case 1:
